@@ -1,1 +1,0 @@
-# Infornomic_form
