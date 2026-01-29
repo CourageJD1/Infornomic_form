@@ -1,0 +1,110 @@
+/* Basic App styling */
+.app {
+  max-width: 600px;
+  margin: auto;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.todo-form button {
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 6px 12px;
+}
+
+/* Todo list */
+.todo-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Edit input */
+.edit-input {
+  flex: 1;
+  padding: 6px;
+}
+
+/* Buttons */
+.edit-btn,
+.save-btn,
+.delete-btn {
+  padding: 4px 8px;
+}
+
+/* MEDIA QUERIES for mobile responsiveness */
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+  }
+
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .todo-form button {
+    width: 100%;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters button {
+    width: 100%;
+  }
+
+  .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edit-btn,
+  .save-btn,
+  .delete-btn {
+    margin-top: 5px;
+  }
+}
+  
